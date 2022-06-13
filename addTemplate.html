@@ -1,53 +1,137 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./addTemplate.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./addTemplate.css" />
+  </head>
+  <body>
     <form action="#">
-        <div class="input-field">
-            <label for="pasta">Selecione uma pasta:</label>
-            <select></select>
+      <div class="input-field">
+        <label for="selecione-pasta">Selecione uma pasta:</label>
+        <select id="selecione-pasta"></select>
+      </div>
+
+      <div class="input-field">
+        <div>
+          <input
+            type="checkbox"
+            class="checkbox"
+            id="subpastas"
+            name="scales"
+            checked
+          />
+          <label for="subpastas">Considerar as sub-pastas</label>
         </div>
 
-        <div class="input-field">
-            <div>
-                <input type="checkbox" id="subpastas" name="scales"
-                       checked>
-                <label for="scales">Considerar as sub-pastas</label>
+        <div>
+          <input
+            type="checkbox"
+            class="checkbox"
+            id="periodo"
+            name="scales"
+            checked
+          />
+          <label for="periodo">Filtrar por período</label>
+        </div>
+      </div>
+
+      <div class="input-field">
+        <label for="entidades-atributos"
+          >Selecione as entidades e os atributos que deseja adicionar ao
+          template:</label
+        >
+        <select id="entidades-atributos"></select>
+      </div>
+
+      <div class="attributes-field">
+        <label for="seleicione-atributos">Selecione os atributos</label>
+        <div class="attributes-area">
+          <div class="attributes-card">
+            <div class="card-title">
+              <label for="">Title</label>
             </div>
-            <div>
-                <input type="checkbox" id="scales" name="scales"
-                       checked>
-                <label for="scales">Filtrar por período</label>
+            <div class="card-content">
+              <div class="checkbox-field">
+                <input
+                  type="checkbox"
+                  class="checkbox"
+                  id=""
+                  name=""
+                  checked
+                />
+                <label for="">checkbox content</label>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-field">
+        <label for="filter">Filtrar por:</label>
+        <input type="text" id="filter" />
+      </div>
+
+      <div class="table-fixes-field">
+        <p>Ajustes da tabela:</p>
+
+        <div class="auto-resize checkbox-field">
+          <input
+            type="checkbox"
+            class="checkbox"
+            id="scales"
+            name="scales"
+            checked
+          />
+          <label for="scales"
+            >Redimensionar automaticamente a largura da página</label
+          >
+        </div>
+        <div class="align-title checkbox-field">
+          <input
+            type="checkbox"
+            class="checkbox"
+            id="scales"
+            name="scales"
+            checked
+          />
+          <label for="scales">Alinhamento título: </label>
+          <select></select>
         </div>
 
-        <div class="input-field">
-            <label for="pasta">Selecione as entidades e os atributos que deseja adicionar ao template:</label>
-            <select></select>
+        <div class="align-text checkbox-field">
+          <input
+            type="checkbox"
+            class="checkbox"
+            id="scales"
+            name="scales"
+            checked
+          />
+          <label for="scales">Alinhamento texto: </label>
+          <select></select>
         </div>
+      </div>
 
-        <div class="attributes-field">
-            <label for="scales">Selecione os atributos</label>
-            <div class="attributes-area">
-                <div class="attributes-card">
-                    <div class="card-title">
-                        <label for="scales">Title</label>
-                    </div>
-                    <div class="card-content">
-                        <div>
-                            <input type="checkbox" id="scales" name="scales"
-                                   checked>
-                            <label for="scales">checkbox content</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <table class="result">
+        <tr>
+          <th>Ícone</th>
+
+          <th>Nome</th>
+
+          <th>Qtd. de distribuidores</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <div class="save-cancel">
+        <button class="btn-form btn-form-save">Salvar</button>
+        <button class="btn-form btn-form-cancel">Cancelar</button>
+      </div>
     </form>
-</body>
+  </body>
 </html>

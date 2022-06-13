@@ -1,4 +1,5 @@
-.input-field select {
+.input-field select, 
+.filter-field input {
     margin-top: 8px;
     max-width: 618px;
     min-height: 34px;
@@ -10,15 +11,32 @@
     margin-bottom: 22px;
 }
 
+.input-field div {
+    display: flex;
+    align-items: center;
+}
+
+.attributes-field {
+    margin-bottom: 17px;
+}
+.attributes-area {
+    display: flex;
+    overflow-x: scroll;
+}
+
 .attributes-card {
     margin-top: 11px;
+    margin-right: 40px;
     border: 1px solid #CCCCCC;
-    max-width: 263px;
+    min-width: 263px;
     height: 335px;
 }
 
+.attributes-card:last-child {
+    margin-right: 0px;
+}
+
 .card-title {
-    /* margin-bottom: 15px; */
     border-bottom: 1px solid #CCCCCC;
     padding: 10px 0 7px 11px;
 }
@@ -27,8 +45,78 @@
     padding: 15px 7px 15px 11px;
 }
 
-.card-content label{
+.card-content label {
    
     margin-left: 19px;
     font-size: 1rem;
 }
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+}
+
+.filter-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 39px;
+}
+
+.filter-field label {
+    margin-bottom: 22px;
+}
+
+.filter-field input {
+    margin-top: 0px;
+}
+
+.table-fixes-field .checkbox {
+    margin-right: 19px;
+}
+
+.checkbox-field {
+    display: flex;
+    align-items: center;
+}
+    
+.align-title select, .align-text select {
+    width: 618px;
+    height: 34px;
+    margin-left: 16px;
+}
+
+th, td{
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: left;
+}
+.result {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+
+.table-fixes-field div {
+    margin-bottom: 22px;
+}
+
+.btn-form {
+    border-radius: 2px;
+    min-width: 72px;
+    min-height: 32px;
+    box-sizing: border-box;
+}
+
+.btn-form-save {
+    background-color: #3C8DBC;
+    color: white;
+    border: none;
+}
+
+.btn-form-cancel {
+    background-color: #F4F4F4;
+    color: black;
+    border: 1px solid #DDDDDD;
+    margin-left: 14px;
+}
+
